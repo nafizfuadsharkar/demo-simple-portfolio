@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.hero-glow {
+  background: radial-gradient(
+    ellipse at center,
+    rgba(122, 43, 255, 0.08),
+    transparent 30%
+  );
+}
