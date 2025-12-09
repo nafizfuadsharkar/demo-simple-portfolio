@@ -1,3 +1,4 @@
+import { Github, Linkedin } from "lucide-react";
 import React from "react";
 import { FaMoon, FaSun } from "react-icons/fa";
 
@@ -30,13 +31,24 @@ export default function Navbar({ dark, setDark }) {
             <a href="#contact" className="hover:text-brand-300">
               Contact
             </a>
+            <a
+              href="https://www.linkedin.com/in/nafizfuadsharkar"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-500 hover:text-blue-600 transition"
+            >
+              <Linkedin size={22} />
+            </a>
+
+            <a
+              href="https://github.com/nafizfuadsharkar"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-500 hover:text-blue-600 transition"
+            >
+              <Github size={22} />
+            </a>
           </nav>
-          <button
-            onClick={() => setDark(!dark)}
-            className="p-2 rounded-md bg-gray-100 dark:bg-[#0b0613]/60"
-          >
-            {dark ? <FaSun /> : <FaMoon />}
-          </button>
         </div>
       </div>
     </header>

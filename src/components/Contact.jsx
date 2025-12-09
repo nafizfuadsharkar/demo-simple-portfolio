@@ -5,9 +5,9 @@ export default function Contact() {
   return (
     <section id="contact" className="py-12">
       <div className="max-w-3xl mx-auto" data-aos="fade-up">
-        <h2 className="text-2xl font-semibold mb-4">Contact</h2>
+        <h2 className="text-2xl font-semibold mb-4 text-center">Contact</h2>
         <p className="text-gray-700 dark:text-gray-300 mb-4">
-          Interested in collaborating? Send a message — demo contact form below.
+          Interested in collaborating? Send a message — contact form below.
         </p>
         {!sent ? (
           <form
@@ -48,7 +48,7 @@ export default function Contact() {
           </form>
         ) : (
           <div className="p-4 rounded-md bg-green-900/20 border border-green-800">
-            Thanks — message received (demo).
+            <p>Thanks, you message has received !</p>
           </div>
         )}
       </div>

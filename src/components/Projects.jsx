@@ -22,7 +22,7 @@ export default function Projects() {
   return (
     <section id="projects" className="py-12">
       <div className="max-w-6xl mx-auto" data-aos="zoom-in">
-        <h2 className="text-2xl font-semibold mb-6">Projects</h2>
+        <h2 className="text-2xl font-semibold mb-6 text-center">Projects</h2>
         <div className="grid md:grid-cols-2 gap-6">
           {projects.map((p) => (
             <ProjectCard key={p.title} p={p} />
