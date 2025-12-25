@@ -8,13 +8,15 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 export default function App() {
-  const [dark, setDark] = useState(true);
+  const [dark, setDark] = useState(() => {
+    const saved = localStorage.getItem("dark");
+    return saved !== null ? JSON.parse(saved) : true;
+  });
 
   React.useEffect(() => {
-    if (dark) document.documentElement.classList.add("dark");
-    else document.documentElement.classList.remove("dark");
+    document.documentElement.classList.toggle("dark", dark);
+    localStorage.setItem("dark", JSON.stringify(dark));
   }, [dark]);
-
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50 dark:from-[#05010b] dark:to-[#07030b]">
       <Navbar dark={dark} setDark={setDark} />

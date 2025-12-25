@@ -1,13 +1,23 @@
 import React, { useState } from "react";
+import Swal from "sweetalert2";
 
 export default function Contact() {
   const [sent, setSent] = useState(false);
+  const handleSendMessage = (e) => {
+    e.preventDefault();
+    Swal.fire({
+      title: "Thank You!",
+      text: "Your message has been sent successfully!",
+      icon: "success",
+    });
+  };
   return (
     <section id="contact" className="py-12">
       <div className="max-w-3xl mx-auto" data-aos="fade-up">
         <h2 className="text-2xl font-semibold mb-4 text-center">Contact</h2>
         <p className="text-gray-700 dark:text-gray-300 mb-4">
-          Interested in collaborating? Send a message — contact form below.
+          Interested in collaborating? Please send a message. Contact form
+          below:
         </p>
         {!sent ? (
           <form
@@ -35,11 +45,14 @@ export default function Contact() {
               placeholder="Message"
             ></textarea>
             <div className="flex gap-3">
-              <button className="px-4 py-2 rounded-md bg-gradient-to-r from-brand-500 to-brand-700 text-white">
+              <button
+                onClick={handleSendMessage}
+                className="px-4 py-2 rounded-md bg-gradient-to-r from-brand-500 to-brand-700 border border-gray-700 dark:text-white"
+              >
                 Send Message
               </button>
               <a
-                href="mailto:nafizfuadsharkar@gmail.com"
+                href="mailto:sharkarnafiz@gmail.com"
                 className="px-4 py-2 rounded-md border border-gray-700"
               >
                 Email me

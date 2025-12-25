@@ -64,7 +64,7 @@ export default function Skills() {
               <div className="text-3xl mb-3 text-blue-400 flex items-center justify-center">
                 {s.icon}
               </div>
-              <div className="text-sm font-medium text-gray-200">{s.name}</div>
+              <div className="text-sm font-medium dark:text-gray-200">{s.name}</div>
             </div>
           ))}
         </div>

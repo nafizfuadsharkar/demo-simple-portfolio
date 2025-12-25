@@ -17,6 +17,7 @@ export default function Navbar({ dark, setDark }) {
             </div>
           </div>
         </div>
+
         <div className="flex items-center gap-4">
           <nav className="hidden md:flex gap-6 text-sm text-gray-700 dark:text-gray-300">
             <a href="#about" className="hover:text-brand-300">
@@ -49,6 +50,12 @@ export default function Navbar({ dark, setDark }) {
               <Github size={22} />
             </a>
           </nav>
+          <div
+            className="cursor-pointer text-gray-700 dark:text-gray-300"
+            onClick={() => setDark(!dark)}
+          >
+            {dark ? <FaSun size={18} /> : <FaMoon size={18} />}
+          </div>
         </div>
       </div>
     </header>

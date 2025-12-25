@@ -3,18 +3,20 @@ import ProjectCard from "./ProjectCard";
 
 const projects = [
   {
-    title: "ToyTopia (ToyKids)",
-    desc: "Local toy marketplace with Firebase auth, protected routes, and responsive UI.",
-    tech: ["React", "Firebase", "Tailwind", "Swiper"],
-    live: "https://toykids-react-firebase.web.app/",
-    repo: "https://github.com/nafizfuadsharkar/ToyKids-using-React-and-Firebase",
-  },
-  {
     title: "IMEX — Import & Export",
     desc: "Import-Export management system with product tracking, imports/exports flow and authentication.",
     tech: ["React", "Node", "MongoDB", "Tailwind"],
     live: "https://imex-port-nafiz.netlify.app/",
     repo: "https://github.com/nafizfuadsharkar/import-export-client",
+    photoURL: "https://i.ibb.co.com/fzbrFhv1/Screenshot-2025-12-26-002111.png",
+  },
+  {
+    title: "ToyTopia (ToyKids)",
+    desc: "Local toy marketplace with Firebase auth, protected routes, and responsive UI.",
+    tech: ["React", "Firebase", "Tailwind", "Swiper"],
+    live: "https://toykids-react-firebase.web.app/",
+    repo: "https://github.com/nafizfuadsharkar/ToyKids-using-React-and-Firebase",
+    photoURL: "https://i.ibb.co.com/DP915G5r/Screenshot-2025-12-26-003747.png",
   },
 ];
 
